@@ -1,6 +1,5 @@
 /*
-Deschidem input_main.cpp și căutam
-In input_main.cpp cautam:
+Deschidem input_main.cpp și căutam:
 */
 
 LPCHARACTER newmember = CHARACTER_MANAGER::instance().Find(vid);
@@ -10,7 +9,7 @@ Mai jos găsiți:
 */
 
 if (!ch->IsPC())
-					return SubPacketLen;
+	return SubPacketLen;
 
 /* 
 Și o modificați în:    
