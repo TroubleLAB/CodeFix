@@ -1,6 +1,11 @@
 ### Acest cod este destinat să blocheze automat mesajele de tip spam care promovează vânzarea de yang și conturi, utilizând o abordare eficientă bazată pe expresii regulate. 
 ** 1. -> input_main.cpp **
 ```
+git status
+git add
+git commit
+```
+```
 #include <regex> 
 std::string NormalizeMessage(const std::string& message) {
     std::string normalized = message;
