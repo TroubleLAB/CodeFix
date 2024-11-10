@@ -1,11 +1,8 @@
-### Acest cod este destinat să blocheze automat mesajele de tip spam care promovează vânzarea de yang și conturi, utilizând o abordare eficientă bazată pe expresii regulate. 
-** 1. -> input_main.cpp **
-```
-git status
-git add
-git commit
-```
-```
+/*
+Acest cod este destinat să blocheze automat mesajele de tip spam care promovează vânzarea de yang și conturi, utilizând o abordare eficientă bazată pe expresii regulate. 
+1. -> input_main.cpp
+*/
+
 #include <regex> 
 std::string NormalizeMessage(const std::string& message) {
     std::string normalized = message;
@@ -20,9 +17,9 @@ bool IsSpamMessage(const std::string& message) {
 
     return std::regex_search(normalized, patternSpam);
 }
-```
-** 2. **
-```
+/*
+2.
+*/
     if (ch->GetLevel() < SHOUT_LIMIT_LEVEL)
     {
         ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("외치기는 레벨 %d 이상만 사용 가능 합니다."), SHOUT_LIMIT_LEVEL);
@@ -31,4 +28,4 @@ bool IsSpamMessage(const std::string& message) {
 	
     if (IsSpamMessage(buf))
         return (iExtraLen);
-```
+
